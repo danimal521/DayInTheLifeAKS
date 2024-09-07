@@ -69,3 +69,38 @@ aks-agentpool-41166359-vmss000001   Ready    <none>   3h7m   vx.x.x
 aks-userpool-41166359-vmss000000    Ready    <none>   3h7m   vx.x.x
 aks-userpool-41166359-vmss000001    Ready    <none>   3h7m   vx.x.x
 ```
+
+Let's look at thoes applications or deployments.
+
+```bash
+kubectl get deployments
+```
+
+Result: Nothing, what happened? In a default cluster there will probably not be any deployment. Once again, namespaces are a great way to isolate different workloads in the same cluster. Let's look across ALL namespaces.
+
+```bash
+No resources found in default namespace.
+```
+
+We can add the --all-namespaces=true
+
+```bash
+kubectl get deployments --all-namespaces=true
+```
+
+Result: Now we have some deployments! 
+
+```bash
+NAMESPACE           NAME                    READY   UP-TO-DATE   AVAILABLE   AGE
+gatekeeper-system   gatekeeper-audit        1/1     1            1           3h23m
+gatekeeper-system   gatekeeper-controller   2/2     2            2           3h23m
+kube-system         ama-logs-rs             1/1     1            1           3h20m
+kube-system         azure-policy            1/1     1            1           3h23m
+kube-system         azure-policy-webhook    1/1     1            1           3h23m
+kube-system         coredns                 2/2     2            2           3h23m
+kube-system         coredns-autoscaler      1/1     1            1           3h23m
+kube-system         konnectivity-agent      2/2     2            2           3h23m
+kube-system         metrics-server          2/2     2            2           3h23m
+```
+
+We have now looked at the basic parts of AKS in that we are ready to deploy our application! On to [Module 2](/Module2/README.md)!
