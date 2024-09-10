@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jokeapi
+spec:
+  selector:
+    matchLabels:
+      app: jokeapi
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: jokeapi
+    spec:
+      containers:
+      - name: jokeapi
+        image: oceacr.azurecr.us/jokeapi:0.0.0
+        ports:
+        - containerPort: 5000
+        env:       
+        - name: vaulturl
+          valueFrom:   
+            secretKeyRef:
+              name: vaulturl
+              key: vaulturl      
+        - name: tenantid
+          valueFrom:   
+            secretKeyRef:
+              name: tenantid
+              key: tenantid 
+        - name: clientid
+          valueFrom:   
+            secretKeyRef:
+              name: clientid
+              key: clientid    
+        - name: clientsecret
+          valueFrom:   
+            secretKeyRef:
+              name: clientsecret
+              key: clientsecret    

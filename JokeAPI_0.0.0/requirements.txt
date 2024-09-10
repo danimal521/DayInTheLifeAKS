@@ -1,0 +1,5 @@
+openai
+Flask
+requests
+azure.identity
+azure.keyvault.secrets

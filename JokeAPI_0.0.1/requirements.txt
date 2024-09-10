@@ -1,0 +1,11 @@
+# insightface
+# onnxruntime
+# opencv-python
+# #azure-storage-blob==2.1.0
+# azure-storage-blob
+# azure-cosmos
+openai
+#numpy
+# numpy==1.24.3 
+Flask
+requests
