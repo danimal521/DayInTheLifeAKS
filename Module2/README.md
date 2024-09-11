@@ -1,4 +1,5 @@
 # Module 2: Let's Deploy!
+## Overview
 In this module we will deploy our backend API; the JokeAPI! This API was designed to use OpenAI to create jokes. As we said in module 1, AKS is all about running applications or deployments. We will deploy the API and explore some of the common tasks and commands you will use in AKS.
 
 ## Step 1: Let's create a namespace for our API
@@ -66,7 +67,7 @@ kubectl get pods -n production
 
 Result: SUCCESS!... Oh wait a minute… what is "CreateContainerConfigError"?!
 
-There are times when things do not go as planned (believe it or not)! What do we do when there is a deployment error? Let's mode to [Module 3](/Module3/README.md) and take a look!
+There are times when things do not go as planned (believe it or not)! What do we do when there is a deployment error? Let's move to [Module 3](/Module3/README.md) and take a look!
 
 
 
