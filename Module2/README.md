@@ -73,6 +73,6 @@ There are times when things do not go as planned (believe it or not)! What do we
 
 ```bash
 NAME                       READY   STATUS                       RESTARTS   AGE
-jokeapi-6d99b5c898-blfx5   0/1     CreateContainerConfigError   0          3m23s
+jokeapi-6d99b5c898-pmjjx   0/1     CreateContainerConfigError   0          17m
 ```
 
