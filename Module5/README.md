@@ -15,8 +15,7 @@ http://xxx.xxx.xxx.xxx/Joke
 
 Result: A joke!
 
-xxxx
-
+![ss](/Images/ss1.png)
 
 ## Step 2: Upgrade
 There are several ways to upgrade the deployments. The most direct is to set the image.
@@ -54,7 +53,7 @@ http://xxx.xxx.xxx.xxx/Joke?tell me a joke about a programmer using AKS
 
 Result: A joke!
 
-xxxx
+![ss](/Images/ss1.png)
 
 We can always switch back to older versions. This is helpful if there is a production issue and we need to roll back.
 
