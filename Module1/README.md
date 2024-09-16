@@ -1,5 +1,5 @@
 # Module 1: Getting to know your Guerrilla
-![guerrilla](/Images/g1.png)
+<!-- ![guerrilla](/Images/g1.png) -->
 
 ## Overview
 Azure Kubernetes Service is large and has many facets to it. There is a lot to learn and understand and this can be daunting and intimidating. Let's demystify this and get to know our guerrilla!

@@ -4,6 +4,8 @@ Welcome to "A day in the life of AKS"! With the AI revolution and the constant d
 
 In this workshop we will walk through deploying a OpenAI  application and managing it all through the developer perspective. 
 
+## Prerequisites
+To start this journey, you need an AKS cluster that is connected to a container registry and connected to Key Vault or an app registration with access to Key Vault from AKS. 
 
 The workshop is broken down into 5 modules
 
